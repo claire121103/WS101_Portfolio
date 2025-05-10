@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects & Activities | Claire Martillano</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Fix footer placement */
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .projects {
+            flex: 1;
+            padding-bottom: 40px; /* Space for footer */
+        }
+        
+        /* Center projects and improve card design */
+        .projects-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .project-card {
+            max-width: 400px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: var(--background-color);
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Fix dark mode issues */
+        .dark-theme .project-card {
+            background-color: var(--light-gray);
+        }
+        
+        .dark-theme .project-content {
+            color: var(--text-color);
+        }
+        
+        .dark-theme .project-content p {
+            color: var(--text-color);
+        }
+        
+        .dark-theme .btn.small.primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        /* Fix footer in dark mode */
+        footer {
+            background-color: var(--dark-gray);
+            color: #fff;
+            padding: 20px 0;
+            margin-top: auto;
+            width: 100%;
+        }
+        
+        .dark-theme footer {
+            background-color: var(--light-gray);
+            color: var(--text-color);
+        }
+        
+        @media (max-width: 768px) {
+            .projects-grid {
+                gap: 20px;
+            }
+            
+            .project-card {
+                max-width: 100%;
+            }
+        }
+
+        /* Dark mode customization */
+@media (prefers-color-scheme: dark) {
+    .code-body pre {
+        color: white;  /* White text in dark mode */
+        background-color: #333; /* Dark background for the code block */
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">CM</div>  
+            <h3>Claire Martillano</h3>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="projects.html" class="active"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li><a href="certificates.html"><i class="fas fa-certificate"></i> Certificates</a></li>
+                <li><a href="activities.html"><i class="fas fa-tasks"></i> Activities</a></li>
+                <li><a href="index.html#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Sidebar Toggle -->
+    <div class="sidebar-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <section class="projects">
+            <div class="container">
+                <h2 class="section-title">My Projects & Activities</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/assets/Projects.png" alt="Pricing table">
+                        </div>
+                        <div class="project-content">
+                            <h3>Pricing Table</h3>
+                            <p>A pricing table built with HTML, CSS, and JavaScript.</p>
+                            <a href="#" class="btn small primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 Claire Martillano. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="javascript/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities | Claire Martillano</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Add additional styling for activities page */
+        .output-container {
+            margin-top: 20px;
+            border: 1px solid var(--primary-color);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            background-color: var(--light-gray);
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        .output-image {
+            width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 15px;
+        }
+
+        .dark-theme body {
+        background-color: #121212;
+    }
+
+    /* Optional: ensure text remains readable */
+    .dark-theme {
+        color: #e0e0e0;
+    }
+
+        /* Improve certificate card size */
+        .certificate-card {
+            max-width: 400px;
+            min-height: 350px;
+        }
+
+        /* Fix footer in dark mode */
+        .dark-theme footer {
+            background-color: var(--light-gray);
+            color: var(--text-color);
+        }
+
+        /* Make activity content larger and more readable */
+        .activity-content {
+            padding: 25px;
+            max-height: none;
+        }
+
+        /* Add responsive sizing for code sections */
+        .code-section {
+            margin-bottom: 30px;
+        }
+
+        .code-body pre {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .dark-theme .code-body pre,
+        .dark-theme .code-body code {
+            color: black;
+        }
+
+        @media (max-width: 768px) {
+            .output-container {
+                padding: 15px;
+            }
+
+            .activity-content {
+                padding: 15px;
+            }
+
+            .code-body pre {
+                max-height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">CM</div>
+            <h3>Claire Martillano</h3>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="projects.html"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li><a href="certificates.html"><i class="fas fa-certificate"></i> Certificates</a></li>
+                <li><a href="activities.html" class="active"><i class="fas fa-tasks"></i> Activities</a></li>
+                <li><a href="index.html#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Sidebar Toggle -->
+    <div class="sidebar-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <section class="activities">
+            <div class="container">
+                <h2 class="section-title">My Activities</h2>
+
+                <!-- Activity 1 -->
+                <div class="activity-container">
+                    <div class="activity-toggle">
+                        <h3>Activity 1:</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="activity-content">
+
+                        <div class="code-section">
+                            <div class="code-header">
+                                <h4>HTML</h4>
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="code-body">
+                                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Claire Martillano&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Martillano Claire&lt;/h1&gt;
+  &lt;h2&gt;HTML Hands-On Activity&lt;/h2&gt;
+  &lt;hr&gt;
+
+  &lt;p&gt;&lt;b&gt;Introduction:&lt;/b&gt; My name is &lt;em&gt;Martillano Claire.&lt;/em&gt; My hobbies are reading and playing.&lt;/p&gt;
+
+  &lt;p&gt;In this activity, I learned a lot in HTML — how to create basic HTML structures, use different tags, and apply special elements like &lt;mark&gt;highlight&lt;/mark&gt; and line breaks.&lt;/p&gt;
+  &lt;br&gt;
+
+  &lt;hr&gt;
+
+  &lt;p&gt;This is a line break example.&lt;/p&gt;
+  &lt;br&gt;
+  &lt;p&gt;See how this text starts on a new line.&lt;/p&gt;
+  &lt;br&gt;
+
+  &lt;p&gt;Water can be represented as H&lt;sub&gt;2&lt;/sub&gt;O and the square of 3 is 3&lt;sup&gt;2&lt;/sup&gt;.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+                        <!-- Output preview section -->
+                        <div class="output-container">
+                            <h4>Output Preview:</h4>
+                            <img src="/assets/act1.png" alt="Responsive Landing Page Output" class="output-image">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activity 2 -->
+                <div class="activity-container">
+                    <div class="activity-toggle">
+                        <h3>Activity 2:</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="activity-content">
+
+                        <div class="code-section">
+                            <div class="code-header">
+                                <h4>HTML</h4>
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="code-body">
+                                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Activity2&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;Image Maps&lt;/h2&gt;
+    &lt;p&gt;Click the Monitor and Keypad to execute a Javascript function:&lt;/p&gt;
+    &lt;img src=&quot;1e.jpeg&quot; alt=&quot;Imagemap&quot; usemap=&quot;#imgmap&quot; width=&quot;480&quot; height=&quot;484&quot;&gt;
+
+    &lt;map name=&quot;imgmap&quot;&gt;
+        &lt;area shape=&quot;rect&quot; coords=&quot;133,246,228,317&quot; onclick=&quot;myPic()&quot; alt=&quot;Monitor&quot;&gt; 
+        &lt;area shape=&quot;rect&quot; coords=&quot;60,360,120,480&quot; onclick=&quot;myPc()&quot; alt=&quot;Remote Control&quot;&gt;
+    &lt;/map&gt;
+
+    &lt;script&gt;
+        function myPic(){
+            alert(&quot;You clicked The Monitor!&quot;);
+        }
+        function myPc(){
+            alert(&quot;You clicked The Remote Control!&quot;);
+        }
+    &lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+                            </div>
+                        </div>
+
+
+                        <!-- Output preview section -->
+                        <div class="output-container">
+                            <h4>Output Preview:</h4>
+                            <img src="/assets/act2.png" alt="Form Validation Output" class="output-image">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activity 3 -->
+                <div class="activity-container">
+                    <div class="activity-toggle">
+                        <h3>Activity 3:</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="activity-content">
+
+                        <div class="code-section">
+                            <div class="code-header">
+                                <h4>HTML</h4>
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="code-body">
+                                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Image Gallery&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;h1&gt;Image Gallery&lt;/h1&gt;
+        &lt;div class="gallery"&gt;
+            &lt;div class="gallery-item"&gt;
+                &lt;img src="https://via.placeholder.com/300x200" alt="Image 1"&gt;
+            &lt;/div&gt;
+            &lt;div class="gallery-item"&gt;
+                &lt;img src="https://via.placeholder.com/300x200" alt="Image 2"&gt;
+            &lt;/div&gt;
+            &lt;div class="gallery-item"&gt;
+                &lt;img src="https://via.placeholder.com/300x200" alt="Image 3"&gt;
+            &lt;/div&gt;
+            &lt;div class="gallery-item"&gt;
+                &lt;img src="https://via.placeholder.com/300x200" alt="Image 4"&gt;
+            &lt;/div&gt;
+            &lt;div class="gallery-item"&gt;
+                &lt;img src="https://via.placeholder.com/300x200" alt="Image 5"&gt;
+            &lt;/div&gt;
+            &lt;div class="gallery-item"&gt;
+                &lt;img src="https://via.placeholder.com/300x200" alt="Image 6"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div id="lightbox" class="lightbox"&gt;
+        &lt;span class="close"&gt;&times;&lt;/span&gt;
+        &lt;img class="lightbox-content" id="lightbox-img"&gt;
+        &lt;div id="caption"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Output preview section -->
+                        <div class="output-container">
+                            <h4>Output Preview:</h4>
+                            <img src="/assets/act3.png" alt="Form Validation Output" class="output-image">
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Activity 4 -->
+                <div class="activity-container">
+                    <div class="activity-toggle">
+                        <h3>Activity 4:</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="activity-content">
+
+                        <div class="code-section">
+                            <div class="code-header">
+                                <h4>HTML</h4>
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="code-body">
+                                <pre><code>&lt;!--1.html--&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Activity 4&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="celebration-gif"&gt;
+      &lt;img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHhqNm4wZTU1OXRnYWt6bTZ6OXlrZ2pscHFhMWZpdGNhYm9raXU4OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IKpoRiHOpJdvRcI0oA/giphy.gif" alt="Celebration gif"&gt;
+    &lt;/div&gt;
+    &lt;h1&gt;CONGRATULATIONS MY FRIEND!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+&lt;!--2.html--&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Activity 4&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="wrong-page"&gt;&lt;/div&gt;
+    &lt;h1&gt;Oops!&lt;/h1&gt;
+    &lt;p&gt;That is not the correct answer. Please try again.&lt;/p&gt;
+    &lt;p&gt;&lt;a href="Question1.html" class="button"&gt;Go back to Question!&lt;/a&gt;&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+&lt;!--3.html--&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Activity 4&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="quiz-container"&gt;
+      &lt;h1&gt;Welcome to the Quiz!&lt;/h1&gt;
+      &lt;p&gt;Test your knowledge by clicking the button below!&lt;/p&gt;
+      &lt;p&gt;&lt;a href="Question1.html" class="button"&gt;Start the Quiz!&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+&lt;!--4.html--&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Activity 4&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="quiz-container"&gt;
+      &lt;h1&gt;Welcome to the Quiz!&lt;/h1&gt;
+      &lt;p&gt;Test your knowledge by clicking the button below!&lt;/p&gt;
+      &lt;p&gt;&lt;a href="Question1.html" class="button"&gt;Start the Quiz!&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+&lt;!--5.html--&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Activity 4&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="wrong-page"&gt;&lt;/div&gt;
+    &lt;h1&gt;Oops!&lt;/h1&gt;
+    &lt;p&gt;That is not the correct answer. Please try again.&lt;/p&gt;
+    &lt;p&gt;&lt;a href="Question2.html" class="button"&gt;Go back to Question!&lt;/a&gt;&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+&lt;!--6.html--&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Activity 4&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="right-page"&gt;&lt;/div&gt;
+    &lt;h1&gt;Correct!&lt;/h1&gt;
+    &lt;p&gt;Well done my friend!&lt;/p&gt;
+    &lt;p&gt;&lt;a href="Result.html" class="button"&gt;Go to Result&lt;/a&gt;&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+&lt;!--7.html--&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Activity 4&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="right-page"&gt;&lt;/div&gt;
+    &lt;h1&gt;Correct!&lt;/h1&gt;
+    &lt;p&gt;Good Job! Click the button below to move to the next Question!&lt;/p&gt;
+    &lt;p&gt;&lt;a href="Question2.html" class="button"&gt;Next Question&lt;/a&gt;&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+&lt;!--8.html--&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Activity 4&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Question 2: What is the smallest particle in the world?&lt;/h1&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="Wrong.html"&gt;Atom&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="Right.html"&gt;Quarks&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="Wrong.html"&gt;Protons&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="Wrong.html"&gt;Neutrons&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+                            </div>
+                        </div>
+
+                        <!-- Output preview section -->
+                        <div class="output-container">
+                            <h4>Output Preview:</h4>
+                            <img src="#" alt="No Preview" class="output-image">
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Activity 5 -->
+                <div class="activity-container">
+                    <div class="activity-toggle">
+                        <h3>Activity 5:</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="activity-content">
+
+                        <div class="code-section">
+                            <div class="code-header">
+                                <h4>HTML</h4>
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="code-body">
+                                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Activity 5&lt;/title&gt;
+  &lt;style&gt;
+    body {
+      font-family: Garamond, serif;
+    }
+
+    table {
+      width: 50%;
+      border-collapse: collapse;
+      margin: 20px auto;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: Green;
+      color: White;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;h1&gt;Mi Amor Coffee Shop Menu&lt;/h1&gt;
+
+  &lt;table&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Category&lt;/th&gt;
+      &lt;th&gt;Item Name&lt;/th&gt;
+      &lt;th&gt;Price&lt;/th&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+      &lt;td&gt;&lt;b&gt;☕Coffee&lt;/b&gt;&lt;/td&gt;
+      &lt;td&gt;Espresso&lt;/td&gt;
+      &lt;td&gt;₱450&lt;/td&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+      &lt;td&gt;&lt;/td&gt;
+      &lt;td&gt;Black Coffee&lt;/td&gt;
+      &lt;td&gt;₱320&lt;/td&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+      &lt;td&gt;&lt;/td&gt;
+      &lt;td&gt;Mocha&lt;/td&gt;
+      &lt;td&gt;₱350&lt;/td&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+      &lt;td&gt;&lt;/td&gt;
+      &lt;td&gt;Latte&lt;/td&gt;
+      &lt;td&gt;₱430&lt;/td&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+      &lt;td&gt;&lt;b&gt;🍰Pastry&lt;/b&gt;&lt;/td&gt;
+      &lt;td&gt;Croissant&lt;/td&gt;
+      &lt;td&gt;₱350&lt;/td&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+      &lt;td&gt;&lt;/td&gt;
+      &lt;td&gt;Carrot Cake&lt;/td&gt;
+      &lt;td&gt;₱410&lt;/td&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+      &lt;td&gt;&lt;/td&gt;
+      &lt;td&gt;Avocado Toast&lt;/td&gt;
+      &lt;td&gt;₱250&lt;/td&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+      &lt;td&gt;&lt;/td&gt;
+      &lt;td&gt;Macarons&lt;/td&gt;
+      &lt;td&gt;₱200&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+
+  &lt;h2&gt;Available Non-Coffee&lt;/h2&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Fruit Smoothies&lt;/li&gt;
+    &lt;li&gt;Chocolate Shake&lt;/li&gt;
+    &lt;li&gt;Milk&lt;/li&gt;
+    &lt;li&gt;Masala Chai&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h2&gt;Top Selling Coffee And Pastry&lt;/h2&gt;
+  &lt;ol&gt;
+    &lt;li&gt;Black Coffee&lt;/li&gt;
+    &lt;li&gt;Avocado Toast&lt;/li&gt;
+    &lt;li&gt;Latte&lt;/li&gt;
+    &lt;li&gt;Carrot Cake&lt;/li&gt;
+  &lt;/ol&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+                            </div>
+                        </div>
+
+                        <!-- Output preview section -->
+                        <div class="output-container">
+                            <h4>Output Preview:</h4>
+                            <img src="/assets/act5.png" alt="Form Validation Output" class="output-image">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activity 6 -->
+                <div class="activity-container">
+                    <div class="activity-toggle">
+                        <h3>Activity 6:</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="activity-content">
+
+                        <div class="code-section">
+                            <div class="code-header">
+                                <h4>HTML</h4>
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="code-body">
+                                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;Interactive Paragraph&lt;/title&gt;
+  &lt;style&gt;
+    #demo {
+      font-size: 16px;
+      color: black;
+      background-color: white;
+      padding: 10px;
+      border: 1px solid black;
+      display: block;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Interactive Webpage&lt;/h1&gt;
+  &lt;p id=&quot;demo&quot;&gt;
+    I am Claire C. Martillano, a 1st year BSIT Student. This is my Activity in creating a simple interactive webpage from scratch using CodePen.io that demonstrates dynamic styling with JavaScript.
+  &lt;/p&gt;
+
+  &lt;button id=&quot;styleButton&quot; onclick=&quot;changeStyle()&quot;&gt;Change Style&lt;/button&gt;
+  &lt;button onclick=&quot;resetStyle()&quot;&gt;Reset Style&lt;/button&gt;
+  &lt;button onclick=&quot;updateText()&quot;&gt;Update Text&lt;/button&gt;
+  &lt;button onclick=&quot;toggleVisibility()&quot;&gt;Toggle Visibility&lt;/button&gt;
+
+  &lt;script&gt;
+    function changeStyle() {
+      const demo = document.getElementById(&quot;demo&quot;);
+      demo.style.color = &quot;white&quot;;
+      demo.style.backgroundColor = &quot;black&quot;;
+      demo.style.fontSize = &quot;20px&quot;;
+    }
+
+    function resetStyle() {
+      const demo = document.getElementById(&quot;demo&quot;);
+      demo.style.color = &quot;black&quot;;
+      demo.style.backgroundColor = &quot;white&quot;;
+      demo.style.fontSize = &quot;16px&quot;;
+    }
+
+    function updateText() {
+      const demo = document.getElementById(&quot;demo&quot;);
+      demo.innerHTML = &quot;The text has been updated!&quot;;
+    }
+
+    function toggleVisibility() {
+      const demo = document.getElementById(&quot;demo&quot;);
+      if (demo.style.display === &quot;none&quot;) {
+        demo.style.display = &quot;block&quot;;
+      } else {
+        demo.style.display = &quot;none&quot;;
+      }
+    }
+  &lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+                            </div>
+                        </div>
+
+                        <div class="code-section">
+                            <div class="code-header">
+                                <h4>CSS</h4>
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="code-body">
+                                <pre><code>&lt;style&gt;
+#demo {
+  font-size: 40px;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid black;
+  display: block;
+}
+&lt;/style&gt;</code></pre>
+
+                            </div>
+                        </div>
+
+                        <div class="code-section">
+                            <div class="code-header">
+                                <h4>JavaScript</h4>
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="code-body">
+                                <pre><code>let colors = ["red", "blue", "yellow"];
+let currentIndex = 0;
+
+function changeStyle() {
+  let para = document.getElementById("demo");
+  para.style.fontSize = "20px";
+  para.style.color = "white";
+  para.style.backgroundColor = colors[currentIndex];
+
+  currentIndex = (currentIndex + 1) % colors.length;
+}
+
+function resetStyle() {
+  let para = document.getElementById("demo");
+  para.style.fontSize = "16px";
+  para.style.color = "black";
+  para.style.backgroundColor = "white";
+}
+
+function updateText() {
+  document.getElementById("demo").innerText = "The text has been updated!";
+}
+
+function toggleVisibility() {
+  let para = document.getElementById("demo");
+  if (para.style.display === "none") {
+    para.style.display = "block";
+  } else {
+    para.style.display = "none";
+  }
+}
+
+document.getElementById("demo").addEventListener("click", function () {
+  alert("You clicked the paragraph!");
+});
+</code></pre>
+
+                            </div>
+                        </div>
+
+                        <!-- Output preview section -->
+                        <div class="output-container">
+                            <h4>Output Preview:</h4>
+                            <img src="/assets/act6.png" alt="Form Validation Output" class="output-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 Claire Martillano. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="javascript/index.js"></script>
+</body>
+
+</html>
